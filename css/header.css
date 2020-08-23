@@ -1,7 +1,5 @@
 .header-menu {
     grid-area: navegacao;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,8 +26,6 @@
 
 .header-banner {
     grid-area: banner;
-    grid-column: 2 / 3;
-    grid-row: 2 / 2;
     display: grid;
     grid-template-areas: 
         "banner"
@@ -41,7 +37,6 @@
 
 .header-banner img {
     grid-area: banner;
-    width: 500px;
     margin-bottom: 2rem;
 }
 
