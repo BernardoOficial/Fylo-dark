@@ -1,0 +1,179 @@
+.footer-obtenhaacesso {
+    grid-area: obtenhaacesso;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    margin-top: -12rem;
+    margin-bottom: 6rem;
+}
+
+.footer-obtenhaacesso > div {
+    grid-column: 2 / 3;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(219, 30%, 18%);
+    padding: 2.5rem 5rem;
+    border-radius: 10px;
+}
+
+.footer-obtenhaacesso > div h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-obtenhaacesso > div p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    width: 650px;
+    opacity: 0.7;
+    text-align: center
+}
+
+.contato {
+    display: flex;
+}
+
+.footer-obtenhaacesso  input {
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 45px;
+    border: none;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 5px 2.2rem;
+    outline: none;
+}
+
+.footer-obtenhaacesso button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(71, 135, 253);
+    border-radius: 45px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+footer .logo {
+    grid-area: logo;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 30px;
+}
+
+.footer-info {
+    grid-area: informacoes;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-rows: auto auto auto auto;
+    align-self: baseline;
+}
+
+.footer-localizacao {
+    display: flex;
+}
+
+.footer-localizacao img {
+    width: 10px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+.footer-localizacao p {
+    width: 300px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.footer-info-contato {
+    justify-self: center;
+}
+
+.footer-info-contato p {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-info-contato img {
+    margin-right: 20px;
+}
+
+.footer-info-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+}
+
+.footer-info-menu li {
+    list-style: none;
+}
+
+.footer-info-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2rem;
+}
+
+.footer-info-redesociais {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info-redesociais a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer-info-redesociais i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+.attribution {
+    grid-area: rodape;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    padding: 4rem 0 2rem;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+

@@ -1,0 +1,57 @@
+:root {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: hsl(217, 28%, 15%);
+    display: grid;
+    grid-template-areas: 
+        "navegacao"
+        "banner";
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 100px auto;
+}
+
+main {
+    grid-area: main;
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-areas: 
+        "beneficios"
+        "descubramais"
+        "comentarios";
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 100vh auto 100vh;
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+        "obtenhaacesso"
+        "logo"
+        "informacoes"
+        "rodape";
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: auto auto auto;
+}
+
+.ondaImagem {
+    position: absolute;
+    top: 430px;
+    width: 100%;
+    height: 350px;
+    z-index: 0;
+}
