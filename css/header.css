@@ -43,7 +43,6 @@
 }
 
 .header-banner h2 {
-    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     line-height: 2.5rem;
@@ -102,10 +101,12 @@
     }
 
     .header-banner h2 {
+        font-size: 1.5rem;
         width: 250px;
     }
 
     .header-banner p {
+        font-size: 1rem;
         width: 250px;
     }
 
@@ -136,10 +137,12 @@
     }
 
     .header-banner h2 {
+        font-size: 2.5rem;
         width: 400px;
     }
 
     .header-banner p {
+        font-size: 1rem;
         width: 450px;
     }
 
@@ -149,8 +152,19 @@
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     header, main, footer{
         grid-template-columns: 5% 1fr 5%;
+    }
+
+    .header-banner h2 {
+        font-size: 2.8rem;
+        width: 600px;
+        line-height: 2.7rem;
+    }
+
+    .header-banner p {
+        font-size: 1.2rem;
+        width: 550px;
     }
 }

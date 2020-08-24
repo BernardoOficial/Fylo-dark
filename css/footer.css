@@ -165,6 +165,7 @@ footer .logo {
 
 @media screen and (min-width: 0) {
     footer {
+        grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
         justify-content: center;
     }
@@ -204,11 +205,20 @@ footer .logo {
         margin-right: 0;
         margin-bottom: 2rem;
     }
-
-    footer > section {
+ 
+    footer > section > img {
         justify-self: left;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        padding-left: 2rem;
+        box-sizing: border-box;
+    }
+
+    footer > section.footer-info {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding-left: 2rem;
+        box-sizing: border-box;
     }
 
     footer .logo {
@@ -223,11 +233,11 @@ footer .logo {
         width: 100%;
     }
 
-    .footer-localizacao {
+    .footer-info-localizacao {
         margin-bottom: 2rem;
     }
 
-    .footer-localizacao p {
+    .footer-info-localizacao p {
         width: 250px;
     }
 
@@ -247,7 +257,7 @@ footer .logo {
         margin-bottom: 3rem;
     }
 
-    .attribution {
+    .footer-attribution {
         grid-column: 1 / 2;
         grid-row: 4 / 5;
     }
@@ -280,7 +290,6 @@ footer .logo {
         width: 650px;
     }
 
-
     .contato {
         flex-direction: row;
     }
@@ -291,7 +300,7 @@ footer .logo {
         margin-bottom: 0;
     }
 
-    footer > section {
+    footer > section:nth-child(2) {
         justify-self: left;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -301,7 +310,7 @@ footer .logo {
         width: 150px;
     }
 
-    .footer-info {
+    footer > section.footer-info {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         grid-template-columns: 25% 25% 25% 25%;
@@ -312,19 +321,19 @@ footer .logo {
         flex-direction: row;
     }
 
-    .attribution {
+    .footer-attribution {
         grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     .footer-obtenhaacesso > div {
         padding: 2.5rem 5rem;
         width: 900px;
     }
 
-    .footer-info {
+    footer > section.footer-info {
         grid-template-columns: 30% 30% 20% 20%;
         grid-template-rows: auto auto auto auto;
     }
