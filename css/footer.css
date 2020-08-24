@@ -1,7 +1,6 @@
 .footer-obtenhaacesso {
     grid-area: obtenhaacesso;
     display: grid;
-    /* grid-template-columns: 10% 80% 10%; */
 }
 
 .footer-obtenhaacesso > div { 
@@ -56,10 +55,14 @@
     font-weight: 700;
 }
 
+/* fim de obtenhaacesso */
+
 footer .logo {
     grid-area: logo;
     margin-bottom: 30px;
 }
+
+/* fim de logo */
 
 .footer-info {
     grid-area: informacoes;
@@ -67,17 +70,17 @@ footer .logo {
     align-self: baseline;
 }
 
-.footer-localizacao {
+.footer-info-localizacao {
     display: flex;
 }
 
-.footer-localizacao img {
+.footer-info-localizacao img {
     width: 10px;
     height: 15px;
     margin-right: 20px;
 }
 
-.footer-localizacao p {
+.footer-info-localizacao p {
     width: 300px;
     line-height: 1.5rem;
     font-size: 1rem;
@@ -143,7 +146,9 @@ footer .logo {
     border: 1px solid #fff;
 }
 
-.attribution {
+/* fim de footer-info */
+
+.footer-attribution {
     grid-area: rodape;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -152,8 +157,175 @@ footer .logo {
     text-align: center;
 }
 
-.attribution a {
+.footer-attribution a {
     color: #fff;
 }
 
+/* fim de footer-attribution */
 
+@media screen and (min-width: 0) {
+    footer {
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+    }
+
+    .footer-obtenhaacesso {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        grid-template-columns: 100%;
+        justify-self: center;
+        margin-top: -14rem;
+        margin-bottom: 6rem;
+    }
+
+    .footer-obtenhaacesso > div {
+        grid-column: 1 / 2;
+        padding: 2.5rem 2.5rem;
+        border-radius: 10px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .footer-obtenhaacesso > div h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-obtenhaacesso > div p {
+        width: 260px;
+    }
+    
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-obtenhaacesso  input {
+        width: 200px;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    footer > section {
+        justify-self: left;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    footer .logo {
+        width: 150px;
+    }
+
+    .footer-info {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        width: 100%;
+    }
+
+    .footer-localizacao {
+        margin-bottom: 2rem;
+    }
+
+    .footer-localizacao p {
+        width: 250px;
+    }
+
+    .footer-info-contato {
+        margin-bottom: 2rem;
+    }
+
+    .footer-info-contato img {
+        height: 15px;
+    }
+
+    .footer-info-menu {
+        flex-direction: column;
+    }
+
+    .footer-info-menu ul {
+        margin-bottom: 3rem;
+    }
+
+    .attribution {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    footer {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .footer-obtenhaacesso {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+        justify-self: center;
+    }
+
+    .footer-obtenhaacesso > div {
+        padding: 2.5rem 5rem;
+        width: 800px;
+    }
+
+    .footer-obtenhaacesso > div h1 {
+        font-size: 2rem;
+    }
+
+    .footer-obtenhaacesso > div p {
+        width: 650px;
+    }
+
+
+    .contato {
+        flex-direction: row;
+    }
+
+    .footer-obtenhaacesso  input {
+        width: 500px;
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    footer > section {
+        justify-self: left;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    footer .logo {
+        width: 150px;
+    }
+
+    .footer-info {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+     .footer-info-menu {
+        flex-direction: row;
+    }
+
+    .attribution {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .footer-obtenhaacesso > div {
+        padding: 2.5rem 5rem;
+        width: 900px;
+    }
+
+    .footer-info {
+        grid-template-columns: 30% 30% 20% 20%;
+        grid-template-rows: auto auto auto auto;
+    }
+}
